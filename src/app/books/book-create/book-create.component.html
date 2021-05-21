@@ -1,0 +1,18 @@
+<a routerLink="/books">Book List</a>
+<form #createBook="ngForm" (ngSubmit)="addNewBook(createBook)">
+  <div class="mb-3">
+    <label for="exampleFormControlInput2" class="form-label">Title</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Title" ngModel name="title">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput3" class="form-label">Author</label>
+    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Author" ngModel name="author">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea4" class="form-label">Description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea4" rows="3" ngModel name="description"></textarea>
+  </div>
+  <div class="mb-3">
+    <button class="btn btn-primary">Create</button>
+  </div>
+</form>
